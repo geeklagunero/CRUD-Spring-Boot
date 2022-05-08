@@ -20,4 +20,24 @@ public class EstudianteServicioImp implements EstudianteServicio {
 		return repositorio.findAll();
 	}
 
+	@Override
+	public Estudiante guardarEstudiante(Estudiante estudiante) {
+		return repositorio.save(estudiante);
+	}
+
+	@Override
+	public Estudiante obtenerEstudiantePorId(long id) {
+		return repositorio.findById(id).get();
+	}
+
+	@Override
+	public Estudiante actulizarEstudiante(Estudiante estudiante) {
+		return repositorio.save(estudiante);
+	}
+
+	@Override
+	public void eliminarEstudiante(long id) {
+		repositorio.deleteById(id);
+	}
+
 }
