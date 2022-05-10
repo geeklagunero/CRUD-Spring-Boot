@@ -1,12 +1,12 @@
 package com.app.web;
 
-import org.springframework.beans.factory.annotation.Autowired;
+//import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-import com.app.web.entidad.Estudiante;
-import com.app.web.repositorio.EstudianteRepositorio;
+//import com.app.web.entidad.Estudiante;
+//import com.app.web.repositorio.EstudianteRepositorio;
 
 @SpringBootApplication
 public class CrudSpringApplication implements CommandLineRunner {

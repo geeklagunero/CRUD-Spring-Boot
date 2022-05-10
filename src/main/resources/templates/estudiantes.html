@@ -31,6 +31,7 @@
 					<th>Nombre</th>
 					<th>Apellido</th>
 					<th>Email</th>
+					<th>Acciones</th>
 				</tr>
 			</thead>
 			<tbody>
@@ -38,6 +39,11 @@
 					<td th:text="${estudiante.nombre}"></td>
 					<td th:text="${estudiante.apellido}"></td>
 					<td th:text="${estudiante.email}"></td>
+					<td>
+					<a th:href="@{/estudiantes/editar/{id}(id=${estudiante.id})}" class="btn btn-info">Editar</a>
+					
+					<a th:href="@{/estudiantes/{id}(id=${estudiante.id})}" class="btn btn-danger">Elimnar</a>
+					</td>
 				</tr>
 			</tbody>
 		</table>
